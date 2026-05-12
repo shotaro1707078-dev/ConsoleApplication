@@ -7,26 +7,21 @@
 
 int main()
 {
-	const std::string massage = "Hello World!";
+	auto forward = std::string("Hello World!");
+    auto reverse = forward;
+
+	std::reverse(reverse.begin(), reverse.end());
    
 
-  
-    for (int i=0; i < 10; i++) {
-
-        if (i % 2 == 0) {
-
-            std::cout << massage<<'\n';
-
-        }
-        else {
-			std::string revrse(massage.rbegin(), massage.rend());
-			std::cout << revrse << '\n';
-        }
-  
-  
-    }
-	return 0;
-
+	auto i = 10;
+	while (i--) {
+		if(i&1) {
+			std::cout <<  forward  << '\n';
+		}
+		else {
+			std::cout <<  reverse  << '\n';
+		}
+	}
    
 }
 
