@@ -6,8 +6,17 @@
 int main()
 {
   
-    for (int i=0; i < 100; i++) {
- std::cout << "Hello World!\n";
+    for (int i=0; i < 10; i++) {
+
+        if (i % 2 == 0) {
+            std::cout << "Hello World!\n";
+
+        }
+        else {
+   std::cout << "!dlroW olleH\n";
+        }
+  
+  
     }
    
 }
