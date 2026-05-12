@@ -2,22 +2,31 @@
 //
 
 #include <iostream>
+#include<algorithm>
+
 
 int main()
 {
+	const std::string massage = "Hello World!";
+   
+
   
     for (int i=0; i < 10; i++) {
 
         if (i % 2 == 0) {
-            std::cout << "Hello World!\n";
+
+            std::cout << massage<<'\n';
 
         }
         else {
-   std::cout << "!dlroW olleH\n";
+			std::string revrse(massage.rbegin(), massage.rend());
+			std::cout << revrse << '\n';
         }
   
   
     }
+	return 0;
+
    
 }
 
